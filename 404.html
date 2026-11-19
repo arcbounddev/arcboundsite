@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+/* GitHub Pages serves this file for every missing path, at any depth, so relative links
+   would break. This sets <base> to the site root first.
+   'auto' = "/<repo>/" on a *.github.io project site, "/" anywhere else (custom domain).
+   If the site lives at the root of a github.io domain (a user/org site), set SITE_BASE = '/'. */
+(function () {
+  var SITE_BASE = 'auto';
+  var base = SITE_BASE;
+  if (base === 'auto') {
+    var seg = location.pathname.split('/')[1];
+    base = (/\.github\.io$/.test(location.hostname) && seg) ? '/' + seg + '/' : '/';
+  }
+  document.write('<base href="' + base + '">');
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Page not found · Arcbound</title>
+<style>
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:200 600;font-display:swap;src:url(assets/fonts/069be307c1ec.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:italic;font-weight:200 300;font-display:swap;src:url(assets/fonts/decc590db2ec.woff2) format('woff2')}
+@font-face{font-family:'Source Code Pro';font-style:normal;font-weight:300 500;font-display:swap;src:url(assets/fonts/f48487460eef.woff2) format('woff2')}
+
+:root{
+  --ink:#1A1A1A; --red:#F53B3B; --red-deep:#B0211A; --sky:#E3EDF0; --mute:rgba(26,26,26,.68);
+  --sans:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'Source Code Pro',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family:var(--sans);color:var(--ink);background:var(--sky);
+  -webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+.page{position:relative;min-height:100%;display:flex;flex-direction:column;isolation:isolate;overflow:hidden}
+/* CSS, not <img>: the browser's preload scanner would resolve an <img> against the missing URL before <base> exists */
+.page{background:var(--sky) url(assets/img/1bfc3e489ff4.webp) 50% 50%/cover no-repeat}
+/* soft wash so text stays legible over the clouds, like the homepage hero */
+.page::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(ellipse 70% 55% at 50% 42%,rgba(255,255,255,.55),rgba(255,255,255,0) 70%)}
+
+header{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(20px,4vw,48px)}
+header img{height:20px;width:auto;display:block}
+.nav-apply{font-size:14px;font-weight:500;color:var(--ink);text-decoration:none;
+  padding:7px 16px;border-radius:999px;box-shadow:0 0 0 .5px rgba(26,26,26,.45);transition:background .2s}
+.nav-apply:hover{background:rgba(255,255,255,.6)}
+
+main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:0 clamp(20px,5vw,48px) 14vh}
+.code{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--mute);margin:0 0 22px;
+  max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+h1{font-weight:200;font-size:clamp(44px,8.2vw,104px);line-height:1.02;letter-spacing:-.045em;margin:0}
+h1 em{font-style:italic;color:var(--red)}
+.lede{font-size:clamp(16px,1.6vw,18px);line-height:1.6;color:rgba(26,26,26,.78);max-width:34em;margin:26px auto 0}
+.actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px 30px;margin-top:clamp(28px,5vh,44px)}
+
+.cta{display:inline-flex;align-items:center;gap:12px;font-size:14px;font-weight:600;letter-spacing:.04em;
+  color:#fff;background:var(--red);padding:18px 30px;border-radius:999px;text-decoration:none;
+  box-shadow:0 14px 34px -16px rgba(245,59,59,.7);transition:background .2s,transform .3s ease}
+.cta:hover{background:var(--red-deep);transform:translateY(-2px)}
+.cta i{width:6px;height:6px;border-radius:50%;background:#fff}
+.quiet{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--ink);text-decoration:none;
+  border-bottom:.5px solid rgba(26,26,26,.35);padding-bottom:3px}
+.quiet:hover{border-bottom-color:var(--ink)}
+
+a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.cta:focus-visible{outline-color:var(--red-deep)}
+
+@media (max-width:520px){ main{padding-bottom:10vh} .actions{flex-direction:column} }
+@media (prefers-reduced-motion:reduce){ .cta,.nav-apply{transition:none} .cta:hover{transform:none} }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <a href="./" aria-label="Arcbound home"><img data-src="assets/img/d1f247eaf25e.webp" alt="Arcbound" width="222" height="20"></a>
+    <a class="nav-apply" href="./#apply">Apply</a>
+  </header>
+  <main>
+    <p class="code" id="code">404 · page not found</p>
+    <h1>This page is<br><em>off the map.</em></h1>
+    <p class="lede">The link may be out of date, or the address was mistyped. Everything else is right where you left it.</p>
+    <div class="actions">
+      <a class="cta" href="./"><i aria-hidden="true"></i>Back to the homepage</a>
+      <a class="quiet" href="./#activate">See how ArcBase works</a>
+    </div>
+  </main>
+</div>
+<script>
+  document.querySelectorAll('img[data-src]').forEach(function(i){ i.src = i.getAttribute('data-src'); });
+  /* Show the address that was requested, so the visitor can spot a typo. */
+  (function(){
+    var p = decodeURIComponent(location.pathname);
+    var b = document.querySelector('base');
+    var root = b ? new URL(b.href).pathname : '/';
+    if (p.indexOf(root) === 0) p = '/' + p.slice(root.length);
+    if (p && p !== '/') document.getElementById('code').textContent = '404 · ' + p;
+  })();
+</script>
+</body>
+</html>
