@@ -1,0 +1,59 @@
+# Arcbound
+
+> Arcbound builds and runs the personal brands of founders, executives and authors: strategy, identity, website, LinkedIn and newsletter. It is a full-service personal branding firm (200+ clients served, 60+ active, since 2018) that works in two phases: Arc Launch, which defines the brand in 2–3 months, and ArcBase, a 24-month monthly partnership that keeps the brand active.
+
+Arcbound's work is for leaders who are already respected in their field but whose online presence (search results, LinkedIn, website) doesn't reflect it. The process is the same for every client and is shown step by step on the site. Clients include Charlene Li (NYT bestselling author), Sean Magennis (former Global President of YPO, Senior Advisor at Tiger 21), Jay Abraham, Case Kenny, Rohit Bhargava and Christine Perkett.
+
+## Services
+
+- [Arc Launch: Define your brand](https://arcbounddev.github.io/arcboundsite/#define): Phase 1, about 2–3 months. Eight stops from first conversation to a fully equipped brand presence: Intake & Discovery, ICP Definitions, Product Architecture & Financial Model, Brand Strategy & Methodology, Visual Discovery, Visual Identity, Brand Kit, and Launch (website, social templates, newsletter system, podcast launch kit).
+- [ArcBase: Activate your brand](https://arcbounddev.github.io/arcboundsite/activate): Phase 2, a 24-month managed partnership that runs the brand every month after Arc Launch: one ideation call, content in the client's voice every week, outreach, and a monthly report on what worked. Six seats per cohort, 1:1 with Arcbound's senior team. Full details in the ArcBase section below.
+- [Enterprise via Graviten](https://graviten.ai): Personal brands for every loan officer and sales leader across a company, run on the Graviten platform.
+
+## Getting started
+
+- [Complimentary brand audit](https://arcbounddev.github.io/arcboundsite/#claim): Arcbound reviews how a leader shows up across search, LinkedIn and the web, and emails a written audit. Free, confidential, no call required.
+- [Apply for ArcBase](https://arcbounddev.github.io/arcboundsite/activate#apply): By application for the 2026 cohort. Arcbound reviews every application personally, books a 30-minute discovery call if there is a fit, sends a custom proposal, then kicks off with every call booked in week one and launch around week nine.
+- [Timeline](https://arcbounddev.github.io/arcboundsite/#timeline): About four to six hours of the client's time, mostly in the first three weeks. Kickoff in week 1, discovery complete in week 2, brand strategy approved by week 4, identity and homepage copy approved by week 6, launch in week 9, first ArcBase ideation call in month 3, year-one review in month 12.
+- [FAQ](https://arcbounddev.github.io/arcboundsite/#export-faq): Common questions before starting.
+
+## ArcBase
+
+- [Every month](https://arcbounddev.github.io/arcboundsite/activate#month): A live monthly ideation call starts each month. LinkedIn posts go out weekly, short-form clips through the month, and the newsletter plus one long-form piece monthly. Outreach runs continuously, and the monthly report sets up the next call.
+- [Two-year timeline](https://arcbounddev.github.io/arcboundsite/activate#month): Arc Launch covers weeks 1–9, then ArcBase runs 24 months, with the first ideation call in month 3, first quarterly review in month 5, year-one review in month 12 and a two-year review in month 24. Year two keeps the same rhythm with quarterly reviews.
+- [Inside ArcBase](https://arcbounddev.github.io/arcboundsite/activate#inside): Six channels fed by the brand defined in Arc Launch. LinkedIn content (weekly posts, carousels, infographics, profile upkeep); short-form video (captioned clips from podcasts, talks and calls for LinkedIn, Instagram and YouTube Shorts); a named, designed newsletter with one long-form piece a month; outreach and curated introductions; podcast branding, cover art, episode graphics and clips; and a monthly report reviewed together on the next ideation call.
+- [How outreach runs](https://arcbounddev.github.io/arcboundsite/activate#outreach): Relationship-first LinkedIn and email outreach from the client's own accounts, in their voice, to an ideal client list the client approves. Launches once the website and LinkedIn are live. A coordinated LinkedIn and email sequence runs over about ten days and stops on any reply. Every lead is checked against the ICP, existing records and prior contact. Deliverables are a playbook, a curated lead list, an ICP database and a weekly report. Rules: no invented details, opt-outs are final on every channel, sending stays within LinkedIn's limits, work email addresses only, and any change to targeting or messaging needs client sign-off.
+- [Client results](https://arcbounddev.github.io/arcboundsite/activate#results): Charlene Li (client 3+ years) gained 18,000+ followers and 9,000+ newsletter subscribers in 18 months, with 23.6k views on her top LinkedIn newsletter. Founders in Arms (Immad Akhund and Raj Suri) reaches 300,000+ monthly impressions with 60% LinkedIn follower growth. Mark Green had 23,012 LinkedIn impressions in October 2026, 50% above his best month of 2025. Raj Singh drew 58,272 impressions and 212 new followers from 8 posts in October 2026. Charlene Li's outreach reached 398 leaders, with 113 accepted, 34 replies and 7 meetings booked.
+- Arcbound's own outreach, June to November 11, 2026: 72 meetings booked (42 from email, 30 from LinkedIn), 24% of LinkedIn requests accepted, 1,639 emails sent with 99 replies, and $200K+ in recurring revenue won.
+- Expectations: by month 3 the brand and site are live, content has been going out for a few weeks and the newsletter is reaching inboxes. By month 6 there are months of steady publishing and a clear read on which topics bring real conversations. Success measures are agreed at kickoff.
+
+## Who it's for
+
+- Founders: credibility with customers and investors; positioning that explains the company through the founder.
+- Mortgage professionals: trust and referral relationships with agents, builders and past clients.
+- Consultants and coaches: priced, sequenced offers and a point of view that brings in qualified opportunities.
+
+## Proof
+
+- [Testimonials](https://arcbounddev.github.io/arcboundsite/#testimonials): 24 client testimonials.
+- Reported results: Charlene Li gained 18,000+ followers and 9,000+ newsletter subscribers in 18 months; Founders in Arms grew its LinkedIn following 60%; Immad Akhund reaches 300,000+ monthly impressions.
+- Recent client websites: [cordsmeier.com](https://cordsmeier.com), [withtalis.com](https://withtalis.com), [gridtraverse.com](https://gridtraverse.com), [rohitbhargava.com](https://rohitbhargava.com), [christineperkett.com](https://christineperkett.com), [carrie-freeman.com](https://carrie-freeman.com/), [seanmagennis.com](https://seanmagennis.com), [greymont.co](https://greymont.co).
+
+## Newsletter
+
+- [The Science of Thought Leadership](https://newsletter.arcbound.com/): Weekly essay by Bryan Wish for founders and executives on personal brand, PR, books, podcasts and the business behind a reputation. 161 issues since 2022, sent Sunday mornings.
+- [How to Be Your Own PR Agent](https://newsletter.arcbound.com/p/how-to-be-your-own-pr-agent)
+- [The business model behind your reputation](https://newsletter.arcbound.com/p/the-business-model-behind-your-reputation)
+
+## Contact
+
+- Email: [bryan@arcbound.com](mailto:bryan@arcbound.com)
+- Phone/text: +1 703-626-6927
+- [LinkedIn](https://www.linkedin.com/company/arcbound)
+- [Instagram](https://www.instagram.com/arcboundhq/)
+
+## Optional
+
+- [Team](https://arcbounddev.github.io/arcboundsite/#team)
+- [Newsletter signup](https://arcbounddev.github.io/arcboundsite/#newsletter)
+- [Graviten, enterprise partner](https://graviten.ai)
