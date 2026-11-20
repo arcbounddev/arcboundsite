@@ -87,6 +87,45 @@ a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 @media (max-width:520px){ main{padding-bottom:10vh} .actions{flex-direction:column} }
 @media (prefers-reduced-motion:reduce){ .cta,.nav-apply{transition:none} .cta:hover{transform:none} }
 </style>
+   <!-- Google Analytics (GA4), lazyloaded: loads after 4s or on first user interaction -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YZ7Y5SLFRW');
+
+  (function () {
+    var loaded = false;
+    var events = ['scroll', 'click', 'mousemove', 'keydown', 'touchstart', 'pointerdown', 'wheel'];
+    var timer;
+
+    function loadGA() {
+      if (loaded) return;
+      loaded = true;
+      clearTimeout(timer);
+      events.forEach(function (e) {
+        window.removeEventListener(e, loadGA, { passive: true });
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YZ7Y5SLFRW';
+      document.head.appendChild(s);
+    }
+
+    events.forEach(function (e) {
+      window.addEventListener(e, loadGA, { passive: true, once: true });
+    });
+
+    // Start the 4-second timer once the page has finished loading
+    if (document.readyState === 'complete') {
+      timer = setTimeout(loadGA, 4000);
+    } else {
+      window.addEventListener('load', function () {
+        timer = setTimeout(loadGA, 4000);
+      });
+    }
+  })();
+</script>
 </head>
 <body>
 <div class="page">
