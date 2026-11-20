@@ -1322,6 +1322,146 @@ html.nl-pill-off [data-pill]{opacity:0!important;pointer-events:none!important;t
   #newsletter *,#newsletter *::before,#newsletter *::after{transition-duration:.01ms!important;animation-duration:.01ms!important;transition-delay:0s!important}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://arcbounddev.github.io/arcboundsite/#organization",
+      "name": "Arcbound",
+      "url": "https://arcbounddev.github.io/arcboundsite/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://arcbounddev.github.io/arcboundsite/assets/img/d1f247eaf25e.webp"
+      },
+      "image": "https://arcbounddev.github.io/arcboundsite/assets/img/d1f247eaf25e.webp",
+      "slogan": "The architecture behind enduring personal brands.",
+      "description": "Arcbound builds and runs the personal brands of founders, executives and authors: strategy, identity, website, LinkedIn and newsletter.",
+      "foundingDate": "2018",
+      "email": "bryan@arcbound.com",
+      "telephone": "+1-703-626-6927",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "bryan@arcbound.com",
+        "telephone": "+1-703-626-6927"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/arcbound",
+        "https://www.instagram.com/arcboundhq/"
+      ],
+      "knowsAbout": [
+        "Personal branding",
+        "Thought leadership",
+        "Brand strategy",
+        "Visual identity",
+        "Website design",
+        "LinkedIn content",
+        "Newsletters",
+        "Podcast production"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Arcbound personal branding services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@id": "https://arcbounddev.github.io/arcboundsite/#arc-launch" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://arcbounddev.github.io/arcboundsite/activate#arcbase" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://arcbounddev.github.io/arcboundsite/#website",
+      "url": "https://arcbounddev.github.io/arcboundsite/",
+      "name": "Arcbound",
+      "publisher": { "@id": "https://arcbounddev.github.io/arcboundsite/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://arcbounddev.github.io/arcboundsite/#webpage",
+      "url": "https://arcbounddev.github.io/arcboundsite/",
+      "name": "Arcbound | Full Service Personal Branding",
+      "description": "Arcbound builds and runs the personal brands of founders, executives and authors: strategy, identity, website, LinkedIn and newsletter.",
+      "isPartOf": { "@id": "https://arcbounddev.github.io/arcboundsite/#website" },
+      "about": { "@id": "https://arcbounddev.github.io/arcboundsite/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arcbounddev.github.io/arcboundsite/#arc-launch",
+      "name": "Arc Launch",
+      "serviceType": "Personal brand strategy, identity and website",
+      "description": "Strategy, identity, website and launch. Eight stops from the first conversation to a fully equipped brand presence in 2–3 months: Intake & Discovery, ICP Definitions, Product Architecture & Financial Model, Brand Strategy & Methodology, Visual Discovery, Visual Identity, Brand Kit, and Launch.",
+      "url": "https://arcbounddev.github.io/arcboundsite/#define",
+      "provider": { "@id": "https://arcbounddev.github.io/arcboundsite/#organization" },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Founders, executives, authors, consultants, coaches and mortgage professionals"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arcbounddev.github.io/arcboundsite/activate#arcbase",
+      "name": "ArcBase",
+      "serviceType": "Managed personal brand content and outreach",
+      "description": "A 2-year managed partnership that runs the brand every month after Arc Launch: a monthly ideation call, content in the client's voice every week, outreach, and a monthly report on what worked.",
+      "url": "https://arcbounddev.github.io/arcboundsite/activate",
+      "provider": { "@id": "https://arcbounddev.github.io/arcboundsite/#organization" }
+    },
+    {
+      "@type": "Periodical",
+      "@id": "https://arcbounddev.github.io/arcboundsite/#newsletter",
+      "name": "The Science of Thought Leadership",
+      "url": "https://newsletter.arcbound.com/",
+      "description": "One essay a week for founders and executives building a name: personal brand, PR, books, podcasts and the business behind a reputation.",
+      "author": { "@type": "Person", "name": "Bryan Wish" },
+      "publisher": { "@id": "https://arcbounddev.github.io/arcboundsite/#organization" },
+      "startDate": "2022"
+    }
+  ]
+}
+</script>
+<!-- Google Analytics (GA4), lazyloaded: loads after 4s or on first user interaction -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YZ7Y5SLFRW');
+
+  (function () {
+    var loaded = false;
+    var events = ['scroll', 'click', 'mousemove', 'keydown', 'touchstart', 'pointerdown', 'wheel'];
+    var timer;
+
+    function loadGA() {
+      if (loaded) return;
+      loaded = true;
+      clearTimeout(timer);
+      events.forEach(function (e) {
+        window.removeEventListener(e, loadGA, { passive: true });
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YZ7Y5SLFRW';
+      document.head.appendChild(s);
+    }
+
+    events.forEach(function (e) {
+      window.addEventListener(e, loadGA, { passive: true, once: true });
+    });
+
+    // Start the 4-second timer once the page has finished loading
+    if (document.readyState === 'complete') {
+      timer = setTimeout(loadGA, 4000);
+    } else {
+      window.addEventListener('load', function () {
+        timer = setTimeout(loadGA, 4000);
+      });
+    }
+  })();
+</script>
 </head>
 <body>
 <script>window.__resources = {"lf0": "assets/img/2ab0dcf599c2.webp", "lf2": "assets/img/ee8bbf92fcf6.webp", "lf3": "assets/img/53c7d618ff94.webp", "lf4": "assets/img/d8aedd0bfce1.webp", "lf15": "assets/img/fd18e459f22b.webp", "ms3": "assets/img/92bc6e8b4906.webp", "ms5": "assets/img/7f85df6489cb.webp", "ms7": "assets/img/5c7b1845eb86.png", "ms6": "assets/img/5c11e093ea4d.webp", "ms4": "assets/img/e802634a8128.webp", "ms10": "assets/img/618ff6d25083.webp", "ms9": "assets/img/239c5089559d.webp", "ms8": "assets/img/fc1a8fd94487.webp", "ms1": "assets/img/ddf8bfe8cbdf.webp", "ms11": "assets/img/d35bd722c2b5.webp", "ms14": "assets/img/9c4bbb8b1cc1.webp", "ms13": "assets/img/75023f36946e.webp", "lf5": "assets/img/a99e17bde232.jpg", "lf6": "assets/img/2fbf73c5281e.png", "lf8": "assets/img/2695e517911e.jpg", "lf9": "assets/img/f801cca3b3cb.webp", "lf17": "assets/img/92b2f2a3b8d2.webp", "lf19": "assets/img/2563cd6608c8.webp", "lf14": "assets/img/a788301c3d1b.png", "lf27": "assets/img/4be69d61061a.webp", "lf11": "assets/img/318e2b4249f4.avif", "lf16": "assets/img/ba745d875f20.svg", "lf20": "assets/img/ab82337f2135.webp", "lf10": "assets/img/6895243b762d.webp", "lf23": "assets/img/c12abb3ebdcf.webp", "lf26": "assets/img/a68a8302b06f.webp", "lf13": "assets/img/ab475b404d8f.webp", "lf7": "assets/img/fc1ffc9f0f68.webp", "lf18": "assets/img/ed95a96de556.webp", "lf22": "assets/img/58f047a701c3.png", "lf21": "assets/img/93fa0b39b8c7.png", "lf28": "assets/img/95aec9324fa9.webp", "lf24": "assets/img/dc6a1611a15d.png", "lf12": "assets/img/0af1d6c23ca9.webp", "lf25": "assets/img/6537c00ec0d7.webp", "lf1": "assets/img/9fc1946dde04.webp", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/js/aa77ae4c49f5.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/js/feb8ddc9d056.js", "ms0": "assets/img/55b2e1eeb4e3.webp", "ms2": "assets/img/62e7f38d8b92.webp", "ms12": "assets/img/65c4b809cb49.webp"};</script>
