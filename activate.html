@@ -513,6 +513,111 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
 .voice figcaption > span > span{font-family:var(--mono);font-size:12.5px;color:var(--soft)}
 @media (min-width:861px){.res .nums.n3{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style>
+   <!-- Google Analytics (GA4), lazyloaded: loads after 4s or on first user interaction -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YZ7Y5SLFRW');
+
+  (function () {
+    var loaded = false;
+    var events = ['scroll', 'click', 'mousemove', 'keydown', 'touchstart', 'pointerdown', 'wheel'];
+    var timer;
+
+    function loadGA() {
+      if (loaded) return;
+      loaded = true;
+      clearTimeout(timer);
+      events.forEach(function (e) {
+        window.removeEventListener(e, loadGA, { passive: true });
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YZ7Y5SLFRW';
+      document.head.appendChild(s);
+    }
+
+    events.forEach(function (e) {
+      window.addEventListener(e, loadGA, { passive: true, once: true });
+    });
+
+    // Start the 4-second timer once the page has finished loading
+    if (document.readyState === 'complete') {
+      timer = setTimeout(loadGA, 4000);
+    } else {
+      window.addEventListener('load', function () {
+        timer = setTimeout(loadGA, 4000);
+      });
+    }
+  })();
+</script>
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://arcbound.com/activate#webpage",
+      "url": "https://arcbound.com/activate",
+      "name": "Activate your brand · ArcBase by Arcbound",
+      "description": "ArcBase runs your brand every month after Arc Launch: a monthly ideation call, content in your voice every week, outreach, and a report on what worked.",
+      "isPartOf": { "@id": "https://arcbound.com/#website" },
+      "about": { "@id": "https://arcbound.com/activate#arcbase" },
+      "breadcrumb": { "@id": "https://arcbound.com/activate#breadcrumb" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://arcbound.com/activate#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://arcbound.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Activate your brand", "item": "https://arcbound.com/activate" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arcbound.com/activate#arcbase",
+      "name": "ArcBase",
+      "serviceType": "Managed personal brand content and outreach",
+      "description": "A 2-year managed partnership with Arcbound's senior team that runs the brand every month after Arc Launch: a monthly ideation call, weekly LinkedIn content in the client's voice, short-form video, a monthly newsletter and long-form piece, relationship-first outreach and introductions, podcast support, and a monthly report on what worked. Six seats per cohort, by application.",
+      "url": "https://arcbound.com/activate/",
+      "provider": { "@id": "https://arcbound.com/#organization" },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Founders, executives, authors, consultants and coaches"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Inside ArcBase",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LinkedIn content", "description": "Weekly posts, carousels and infographics in the client's voice and brand system, plus profile upkeep." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Short-form video", "description": "Captioned clips cut from podcasts, talks and calls, sized for LinkedIn, Instagram and YouTube Shorts." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Newsletter", "description": "A named, designed newsletter with one long-form piece every month." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outreach and introductions", "description": "Relationship-first LinkedIn and email outreach to a client-approved ideal client list, with curated introductions across the Arcbound network." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Podcast", "description": "Show branding, cover art, episode graphics and clips." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monthly report", "description": "A short report on what went out and how it performed across every channel, reviewed on the next ideation call." } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://arcbound.com/activate#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What should I expect by month 3 and month 6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By month 3, your brand and site are live and content has been going out for a few weeks, with your newsletter in people’s inboxes. By month 6, you have months of steady publishing and a clear read on which topics bring real conversations. We agree on what success looks like at kickoff and measure against that."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 
