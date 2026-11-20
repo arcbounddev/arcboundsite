@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>Master Services Agreement | Arcbound</title>
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #777;
+      --line: #dedede;
+      --paper: #fff;
+      --accent: #f04444;
+      --toc-width: 230px;
+      --content-width: 790px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .access-state {
+      min-height: 100vh; display: grid; place-items: center;
+      padding: 32px; text-align: center;
+    }
+    .access-state h1 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.04em; }
+    .access-state p { margin: 0; color: var(--muted); font-size: 12px; }
+    .page { display: none; }
+    body.authorized .page { display: block; }
+    body.authorized .access-state { display: none; }
+    .masthead {
+      max-width: 1440px; margin: 0 auto; padding: 42px 5.5vw 30px;
+    }
+    .masthead h1 {
+      max-width: 900px; margin: 0; font-size: clamp(42px, 7vw, 94px);
+      line-height: .82; letter-spacing: -.075em; font-weight: 900;
+      text-transform: uppercase;
+    }
+    .mast-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 24px; margin-top: 26px; padding-top: 13px;
+      border-top: 1px solid var(--line);
+      font-size: 8px; letter-spacing: .12em; text-transform: uppercase;
+    }
+    .pill {
+      display: inline-block; padding: 5px 12px; border-radius: 20px;
+      color: white; background: var(--accent); font-weight: 700;
+      letter-spacing: .08em;
+    }
+    .layout {
+      max-width: 1440px; margin: 0 auto; padding: 0 5.5vw 90px;
+      display: grid; grid-template-columns: var(--toc-width) minmax(0, var(--content-width));
+      gap: clamp(32px, 5vw, 90px); align-items: start;
+    }
+    aside {
+      position: sticky; top: 28px; max-height: calc(100vh - 56px);
+      overflow: auto; padding: 8px 18px 8px 0;
+      border-right: 1px solid var(--line);
+    }
+    aside .toc-label {
+      margin: 0 0 14px; color: var(--muted); font-size: 8px;
+      letter-spacing: .15em; text-transform: uppercase;
+    }
+    aside a {
+      display: block; padding: 5px 0; color: #555; text-decoration: none;
+      font-size: 9px; line-height: 1.35; text-transform: uppercase;
+      transition: color .2s ease;
+    }
+    aside a:hover, aside a:focus { color: var(--accent); }
+    main { min-width: 0; }
+    .intro {
+      margin: 0 0 42px; color: #555; font-size: 10px; line-height: 1.65;
+      max-width: 680px;
+    }
+    .section {
+      padding: 0 0 28px; margin: 0 0 26px;
+      border-bottom: 1px solid var(--line); scroll-margin-top: 24px;
+    }
+    .section h2 {
+      margin: 0 0 14px; font-size: 17px; line-height: 1.02;
+      letter-spacing: -.055em; font-weight: 800; text-transform: uppercase;
+    }
+    .section p {
+      margin: 0 0 12px; color: #444; font-size: 10px; line-height: 1.65;
+    }
+    .section .subhead {
+      margin: 20px 0 8px; color: var(--ink); font-size: 10px;
+      font-weight: 800; letter-spacing: -.02em; text-transform: uppercase;
+    }
+    .exhibits { margin-top: 44px; }
+    .exhibits h2 {
+      margin: 0 0 12px; padding: 12px 10px; background: #f7f7f7;
+      font-size: 28px; line-height: 1; letter-spacing: -.06em;
+      text-transform: uppercase;
+    }
+    .exhibits p { font-size: 10px; color: #555; line-height: 1.6; }
+    .pdf-frame {
+      width: 100%; height: min(78vh, 1100px); min-height: 650px;
+      display: block; border: 1px solid var(--line); background: #fafafa;
+    }
+    .pdf-note { color: var(--muted); font-size: 9px; margin: 9px 0 0; }
+    .download {
+      display: inline-block; margin-top: 10px; color: var(--ink);
+      font-size: 9px; text-decoration-thickness: 1px; text-underline-offset: 3px;
+    }
+    footer {
+      max-width: 1440px; margin: 0 auto; padding: 18px 5.5vw 36px;
+      color: #888; font-size: 8px; letter-spacing: .08em;
+      border-top: 1px solid var(--line); text-transform: uppercase;
+    }
+    @media (max-width: 760px) {
+      .masthead { padding: 28px 22px 22px; }
+      .masthead h1 { font-size: clamp(40px, 12vw, 66px); }
+      .mast-meta { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .layout { display: block; padding: 0 22px 60px; }
+      aside {
+        position: static; max-height: none; overflow: visible;
+        border-right: 0; border-bottom: 1px solid var(--line);
+        padding: 0 0 16px; margin-bottom: 28px;
+        display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 18px;
+      }
+      aside .toc-label { grid-column: 1 / -1; }
+      aside a { font-size: 8px; }
+      .pdf-frame { height: 78vh; min-height: 520px; }
+      footer { padding-left: 22px; padding-right: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="access-state" id="access-state" aria-live="polite">
+    <div>
+      <h1>Page unavailable</h1>
+      <p>This page could not be found.</p>
+    </div>
+  </div>
+
+  <div class="page" id="agreement-page">
+    <header class="masthead">
+      <h1>Master Services<br>Agreement</h1>
+      <div class="mast-meta">
+        <span>Arcbound · Master Services Agreement</span>
+        <span class="pill">Private use only</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside aria-label="Agreement contents">
+        <p class="toc-label">Contents</p>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Definitions</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Services and Obligations</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Term and Termination</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Fees and Expenses</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Confidentiality and Non-Solicitation</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Ownership of Deliverables</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Indemnification</a>
+        <a href="agreement.pdf#page=1&toolbar=0&navpanes=0" target="agreement-pdf">Injunctive Relief</a>
+        <a href="agreement.pdf#page=2&toolbar=0&navpanes=0" target="agreement-pdf">Miscellaneous</a>
+        <a href="agreement.pdf#page=2&toolbar=0&navpanes=0" target="agreement-pdf">Exhibit A</a>
+        <a href="agreement.pdf#page=2&toolbar=0&navpanes=0" target="agreement-pdf">Exhibit B</a>
+        <a href="agreement.pdf#page=2&toolbar=0&navpanes=0" target="agreement-pdf">Exhibit C</a>
+        <a href="agreement.pdf#page=3&toolbar=0&navpanes=0" target="agreement-pdf">Exhibit D</a>
+        <a href="agreement.pdf#page=3&toolbar=0&navpanes=0" target="agreement-pdf">Exhibit E</a>
+        <a href="agreement.pdf#page=3&toolbar=0&navpanes=0" target="agreement-pdf">Exhibit F</a>
+      </aside>
+
+      <main>
+        <div class="document-heading">
+          <h2>Master Services Agreement</h2>
+          <p>Agreement document · Source PDF</p>
+        </div>
+        <iframe class="pdf-frame" name="agreement-pdf" title="Master Services Agreement"
+          src="agreement.pdf#page=1&toolbar=0&navpanes=0&view=FitH"></iframe>
+        <p class="pdf-note">Use the contents links to jump to the relevant part of the agreement. If your browser does not display embedded PDFs, <a class="download" href="agreement.pdf" target="_blank" rel="noopener">open the agreement PDF</a>.</p>
+      </main>
+    </div>
+    <footer>Arcbound · Master Services Agreement · Private use only</footer>
+  </div>
+
+  <script>
+    (() => {
+      const expectedKey = "213429134812304885";
+      const expectedValue = "QXJjYm91bmQgdGVybXMgYW5kIGNvbmRpdGlvbnMgY29udHJhY3Qg4oCTIGZvciBwcml2YXRlIHVzZSBvbmx5IGJldHdlZW4gQXJjYm91bmQgcG90ZW50aWFsIGNsaWVudHMsIGNsaWVudHMsIHRoZWlyIGxlZ2FsIHRlYW1zLCBhbmQgQXJjYm91bmQgcGVyc29ubmVs";
+      const params = new URLSearchParams(window.location.search);
+      const supplied = params.get(expectedKey);
+
+      if (supplied === expectedValue) {
+        document.body.classList.add("authorized");
+      } else {
+        // Do not request or expose the agreement PDF unless the URL token matches.
+        document.getElementById("agreement-page").remove();
+      }
+    })();
+  </script>
+</body>
+</html>
