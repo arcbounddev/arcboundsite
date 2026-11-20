@@ -1085,8 +1085,8 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
     </div>
 
     <div>
-      <!-- Anton: set data-endpoint to the live arcbound.com/apply endpoint. Until then the form only shows the confirmation. -->
-      <form class="form" data-form data-endpoint="" novalidate>
+      <!-- Posts to the Formidable bridge (arcbound-form-bridge.php). Clear data-endpoint to put the form back in preview mode. -->
+      <form class="form" data-form data-endpoint="https://arcbound.arcboundstaging.com/wp-json/arcbound/v1/submit/apply" novalidate>
         <p class="form-t">Apply</p>
         <p class="mono" style="color:var(--soft);margin-top:-8px">A quick intro. It takes under a minute.</p>
         <label class="f"><span>Full name *</span><input id="ap-name" name="name" type="text" autocomplete="name" required></label>
@@ -1158,8 +1158,8 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
     <p class="foot-nl-p">Arcbound’s newsletter by Bryan Wish. One essay a week for founders and executives building a name.</p>
   </div>
   <div data-rv>
-    <!-- Anton: same endpoint as the homepage sign-up (beehiiv publication pub_aa5614d6-adf7-404a-9c87-37b0e0f865ef). Until it is set, the form only shows the confirmation. -->
-    <form class="nl-form" data-nl-form data-endpoint="" novalidate aria-describedby="foot-nl-note">
+    <!-- Same endpoint as the homepage sign-up: the Formidable bridge. Clear data-endpoint to put the form back in preview mode. -->
+    <form class="nl-form" data-nl-form data-endpoint="https://arcbound.arcboundstaging.com/wp-json/arcbound/v1/submit/newsletter" novalidate aria-describedby="foot-nl-note">
       <label class="nl-field"><span class="nl-sr">Email address</span><input class="nl-input" name="email" type="email" autocomplete="email" placeholder="Email address" aria-required="true"></label>
       <span class="nl-hp" aria-hidden="true"><input name="website" type="text" autocomplete="off" tabindex="-1"></span>
       <button class="btn magnet nl-btn" type="submit"><i aria-hidden="true"></i><span class="nl-btn-t">Subscribe</span><b aria-hidden="true">→</b></button>
@@ -1276,7 +1276,7 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) { bad.push('an email we can reply to'); email.setAttribute('aria-invalid', 'true'); }
     if (bad.length) { err.textContent = 'Add ' + bad.join(' and ') + ' to send this.'; err.hidden = false; (name.getAttribute('aria-invalid') ? name : email).focus(); return; }
     err.hidden = true;
-    var data = {}; new FormData(form).forEach(function(v, k){ data[k] = v; });
+    var data = {}; new FormData(form).forEach(function(v, k){ data[k] = v; }); data.page = location.href;
     function done(){
       var box = document.querySelector('[data-done]'), first = data.name.trim().split(/\s+/)[0];
       box.querySelector('[data-first]').textContent = first ? ', ' + first : '';
@@ -1284,7 +1284,7 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
       if (window.anime && !reduce) anime.animate(box, { opacity: [0, 1], y: [16, 0], duration: 700, ease: 'out(4)' });
     }
     var ep = form.getAttribute('data-endpoint');
-    if (ep) fetch(ep, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then(done, function(){ err.textContent = 'That did not go through. Try again, or email bryan@arcbound.com.'; err.hidden = false; });
+    if (ep) { if (form.__busy) return; form.__busy = true; fetch(ep, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then(function(r){ if (!r.ok) throw new Error(r.status); done(); }).catch(function(){ err.textContent = 'That did not go through. Try again, or email bryan@arcbound.com.'; err.hidden = false; }).then(function(){ form.__busy = false; }); }
     else done();
   });
 
