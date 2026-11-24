@@ -1,5 +1,5 @@
 # robots.txt for Arcbound
-# https://arcbounddev.github.io/arcboundsite/
+# https://arcbound.com/
 
 # All crawlers: full access
 User-agent: *
@@ -36,7 +36,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# LLM guide: https://arcbounddev.github.io/arcboundsite/llms.txt
-
-# Uncomment once a sitemap is published:
-# Sitemap: https://arcbounddev.github.io/arcboundsite/sitemap.xml
+# LLM guide: https://arcbound.com/llms.txt
