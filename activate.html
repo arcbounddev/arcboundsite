@@ -3,8 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Activate your brand · ArcBase by Arcbound</title>
+<title>Activate your brand | ArcBase by Arcbound</title>
 <meta name="description" content="ArcBase runs your brand every month after Arc Launch: a monthly ideation call, content in your voice every week, outreach, and a report on what worked.">
+<!-- Share preview. At launch, swap https://arcbounddev.github.io/arcboundsite/ for https://arcbound.com/ in these tags. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arcbound">
+<meta property="og:title" content="Activate your brand · ArcBase by Arcbound">
+<meta property="og:description" content="ArcBase runs your brand every month after Arc Launch: a monthly ideation call, content in your voice every week, outreach, and a report on what worked.">
+<meta property="og:url" content="https://arcbounddev.github.io/arcboundsite/activate">
+<meta property="og:image" content="https://arcbounddev.github.io/arcboundsite/assets/img/og-activate.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://arcbounddev.github.io/arcboundsite/assets/img/og-activate.jpg">
    <!-- Standard favicon -->
 <link rel="icon" href="./favicon.ico" sizes="any">
 
@@ -1065,6 +1076,124 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
   </div>
 </section>
 
+<!-- Video section (Nov 23, per Bryan): more short-form video as the last thing before Apply. -->
+<style data-vids-css="">
+.vids{padding:clamp(80px,14vh,140px) 0;border-top:.5px solid var(--line);background:var(--ink);color:#fff;overflow:hidden}
+.vids .sec-head .body{color:rgba(255,255,255,.72)}
+.vids .h2 em{color:var(--red)}
+.vids-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center;margin-bottom:clamp(48px,8vh,88px)}
+.vids-top .vid{max-width:420px;justify-self:center;width:100%}
+.vids-feat{display:grid;gap:18px;align-content:center}
+.vids-feat .kick{font-family:var(--mono);font-size:13px;letter-spacing:.02em;color:rgba(255,255,255,.6)}
+.vids-feat h3{margin:0;font-weight:200;font-size:clamp(40px,4.4vw,66px);line-height:1;letter-spacing:-.045em}
+.vids-feat p{margin:0;max-width:46ch;color:rgba(255,255,255,.74);text-wrap:pretty}
+.vids-feat .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.vids-feat .tags span{font-family:var(--mono);font-size:12.5px;padding:6px 12px;border-radius:999px;box-shadow:inset 0 0 0 .5px rgba(255,255,255,.3);color:rgba(255,255,255,.82)}
+.vid{position:relative;margin:0;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 40px 80px -40px rgba(0,0,0,.8),0 0 0 .5px rgba(255,255,255,.12);cursor:pointer;isolation:isolate}
+.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vid::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.72));pointer-events:none;transition:opacity .3s var(--ease);z-index:1}
+.vid figcaption{position:absolute;left:16px;right:16px;bottom:14px;z-index:2;display:grid;gap:2px;pointer-events:none;transition:opacity .3s var(--ease)}
+.vid figcaption b{font-weight:600;font-size:15px;line-height:1.25}
+.vid figcaption span{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.72)}
+.vid .play{position:absolute;top:50%;left:50%;z-index:2;width:64px;height:64px;margin:-32px 0 0 -32px;border:0;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 14px 34px -12px rgba(245,59,59,.8);transition:transform .3s var(--ease),opacity .3s var(--ease)}
+.vid .play svg{width:22px;height:22px;margin-left:3px}
+.vid:hover .play{transform:scale(1.08)}
+.vid[data-on]::after,.vid[data-on] figcaption,.vid[data-on] .play{opacity:0}
+.vid[data-on] .play{pointer-events:none}
+.vids-rail-h{margin-bottom:22px}
+.vids-rail-h h3{margin:0;font-family:var(--mono);font-weight:400;font-size:13px;letter-spacing:.02em;color:rgba(255,255,255,.6)}
+.vids-nav{display:flex;gap:8px}
+.vids-nav button{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.08);color:#fff;font-size:18px;cursor:pointer;box-shadow:inset 0 0 0 .5px rgba(255,255,255,.24);transition:background .2s}
+.vids-nav button:hover{background:rgba(255,255,255,.16)}
+.vids-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.vids-rail::-webkit-scrollbar{display:none}
+.vids-rail .vid{scroll-snap-align:start;border-radius:18px}
+.vids-rail .play{width:52px;height:52px;margin:-26px 0 0 -26px}
+@media (max-width:860px){
+  .vids-top{grid-template-columns:1fr}
+  .vids-top .vid{max-width:340px}
+  .vids-feat{text-align:left}
+  .vids-nav{display:none}
+  .vids-rail{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.vids-rail .play{width:40px;height:40px;margin:-20px 0 0 -20px}.vids-rail .vid figcaption b{font-size:12.5px}.vids-rail .vid figcaption span{display:none}
+}
+@media (prefers-reduced-motion:reduce){.vid .play,.vid::after,.vid figcaption{transition:none}}
+</style>
+<section class="vids" id="video" aria-labelledby="vids-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="vids-h">Watch the <em>work.</em></h2>
+      <p class="body">A client sizzle reel, live event highlights, podcast clips and the short-form our studio makes every week. Tap any one to play it with sound.</p>
+    </div>
+    <div class="vids-top">
+      <figure class="vid" data-vid="">
+        <video src="assets/video/211681f9be04.mp4" data-loop="1" data-full="assets/video/3730ad165ce1.mp4" poster="assets/img/7039a59aa5f1.webp" muted loop playsinline="" preload="none" aria-label="Vanessa Errecarte sizzle reel"></video>
+        <button class="play" type="button" aria-label="Play Vanessa Errecarte's sizzle reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>Vanessa Errecarte</b><span>Sizzle reel · 2:35</span></figcaption>
+      </figure>
+      <div class="vids-feat">
+        <p class="kick">Sizzle reel</p>
+        <h3>Vanessa Errecarte</h3>
+        <p>Author of <i>Valuable &amp; Visible</i>. We cut her TV interviews, keynotes and book launch into one reel she can send to producers and event hosts.</p>
+        <div class="tags"><span>TV interviews</span><span>Keynotes</span><span>Book launch</span></div>
+      </div>
+    </div>
+    <div class="vids-rail-h"><h3>Recent short-form</h3></div>
+    <div class="vids-rail" aria-label="Short-form videos">
+      <figure class="vid" data-vid="">
+        <video src="assets/video/a594f256e54f.mp4" poster="assets/img/8521c8b01c78.jpg" playsinline="" preload="none" aria-label="Founders in Arms live event highlight"></video>
+        <button class="play" type="button" aria-label="Play Founders in Arms live event highlight"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>Founders in Arms</b><span>Live event with Max Mullen</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/706581e928d4.mp4" poster="assets/img/fed10ddd871c.jpg" playsinline="" preload="none" aria-label="The Unplanned Parent reel"></video>
+        <button class="play" type="button" aria-label="Play The Unplanned Parent reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>The Unplanned Parent</b><span>Podcast reel</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/e26200992d91.mp4" poster="assets/img/5fdace107844.jpg" playsinline="" preload="none" aria-label="Charlene Li's Leading Disruption reel"></video>
+        <button class="play" type="button" aria-label="Play Charlene Li's Leading Disruption reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>Charlene Li</b><span>Leading Disruption</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/d6821509a053.mp4" poster="assets/img/d7ea506b43fc.jpg" playsinline="" preload="none" aria-label="Ronan Kearney's reel"></video>
+        <button class="play" type="button" aria-label="Play Ronan Kearney's reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>Ronan Kearney</b><span>Recording session</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/06d93dc3d22b.mp4" poster="assets/img/59eed69bb047.jpg" playsinline="" preload="none" aria-label="Raj Singh's reel"></video>
+        <button class="play" type="button" aria-label="Play Raj Singh's reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>Raj Singh</b><span>Talk reel</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/94f593e99b70.mp4" poster="assets/img/253a4c78842c.jpg" playsinline="" preload="none" aria-label="The One Away Show reel"></video>
+        <button class="play" type="button" aria-label="Play The One Away Show reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>The One Away Show</b><span>with Brandon Bendes</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/3a25f0ddf954.mp4" poster="assets/img/654cbc0de07c.jpg" playsinline="" preload="none" aria-label="Bryan Wish's reel"></video>
+        <button class="play" type="button" aria-label="Play Bryan Wish's reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>Bryan Wish</b><span>Reel from his newsletter</span></figcaption>
+      </figure>
+      <figure class="vid" data-vid="">
+        <video src="assets/video/0d8b4b0a5e2c.mp4" poster="assets/img/932f64ccc5f7.jpg" playsinline="" preload="none" aria-label="the perfect feed reel"></video>
+        <button class="play" type="button" aria-label="Play the perfect feed reel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></button>
+        <figcaption><b>The perfect feed</b><span>Animated reel</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<script data-vids-js="">
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function stopAll(except){ document.querySelectorAll('.vids .vid[data-on]').forEach(function(f){ if (f === except) return; var v = f.querySelector('video'); v.pause(); v.controls = false; f.removeAttribute('data-on'); }); }
+  function play(f){ var v = f.querySelector('video'); stopAll(f); if (v.dataset.full) { v.loop = false; v.src = v.dataset.full; delete v.dataset.full; } v.muted = false; v.controls = true; f.setAttribute('data-on', ''); var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+  document.addEventListener('click', function(e){ var f = e.target.closest && e.target.closest('.vids [data-vid]'); if (f && !f.hasAttribute('data-on')) { e.preventDefault(); play(f); } });
+  document.addEventListener('ended', function(e){ var f = e.target.closest && e.target.closest('.vids [data-vid]'); if (f) { f.removeAttribute('data-on'); e.target.controls = false; } }, true);
+  var lv = document.querySelector('.vids-top video[data-loop]');
+  if (lv && !reduce && 'IntersectionObserver' in window) new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { lv.preload = 'auto'; var p = lv.play(); if (p && p.catch) p.catch(function(){}); } else if (!lv.closest('.vid').hasAttribute('data-on')) lv.pause(); }); }, {threshold: .35}).observe(lv);
+})();
+</script>
+
 <!-- APPLY -->
 <section class="apply" id="apply" aria-labelledby="apply-h">
   <div class="wrap apply-grid">
@@ -1219,18 +1348,17 @@ html.js .ms-item,html.js .map-chip,html.js .map-core{opacity:0}
 </script>
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="https://www.arcbase.ai/" aria-label="Arcbound home"><img loading="lazy" decoding="async" src="assets/img/818bbed2f437.webp" alt="Arcbound" width="600" height="54"></a>
+        <a href="./" aria-label="Arcbound home"><img loading="lazy" decoding="async" src="assets/img/818bbed2f437.webp" alt="Arcbound" width="600" height="54"></a>
         <p>The architecture behind enduring personal brands.</p>
       </div>
       <nav class="foot-cols" aria-label="Footer">
         <div><h4>Explore</h4><ul>
-          <li><a href="https://www.arcbase.ai/">Home</a></li>
-          <li><a href="https://www.arcbase.ai/#define">Define your brand</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./#define">Define your brand</a></li>
           <li><a href="#month">Activate your brand</a></li>
-          <li><a href="https://www.arcbase.ai/process">Process</a></li>
-          <li><a href="https://www.arcbase.ai/team">Team</a></li>
-          <li><a href="https://www.arcbase.ai/#testimonials">Testimonials</a></li>
-          <li><a href="https://www.arcbase.ai/#export-faq">FAQ</a></li>
+                    <li><a href="./#team">Team</a></li>
+          <li><a href="./#testimonials">Testimonials</a></li>
+          <li><a href="./#export-faq">FAQ</a></li>
         </ul></div>
         <div><h4>Engage</h4><ul>
           <li><a href="#apply">Apply for ARCBASE</a></li>
