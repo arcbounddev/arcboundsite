@@ -4130,5 +4130,43 @@ class Component extends DCLogic {
 }
 </script>
 <script>/* open the full FAQ when someone lands on ./#export-faq (footer link from Activate) */(function(){function o(){if(location.hash==="#export-faq"){var d=document.getElementById("export-faq");if(d&&d.showPopover&&!d.matches(":popover-open"))try{d.showPopover()}catch(e){}}}addEventListener("hashchange",o);if(document.readyState==="complete")o();else addEventListener("load",o)})();</script>
+
+   <style data-short-screens="">
+/* Shorter laptop screens (Nov 2026). The scroll-driven sections size themselves in vh, so on a
+   short window they ran too fast and the content was squeezed or cut off. This keeps a minimum
+   scroll distance in px, sizes the Exhibit B cards to the height that is really there, and
+   tightens the testimonial cards so both columns fit. Reduced motion is left as it was. */
+@media (prefers-reduced-motion: no-preference){
+  /* minimum scroll distance, so each scene has time to play out */
+  #why{height:max(170vh,1500px)!important}
+  #exhibit{height:max(min(720vh,7200px),6200px)!important}
+}
+@media (prefers-reduced-motion: no-preference) and (min-width:1024px) and (min-height:600px){
+  /* only while the testimonials are pinned; below this the section stacks and sizes itself */
+  #voices{height:max(min(260vh,2600px),2200px)!important}
+}
+/* Exhibit B: cards fit the height under the heading (was 100svh - 300px) */
+#exhibit [data-ex-card]{width:min(540px,72vw,calc((100svh - 390px) * 1.42))!important}
+#exhibit [data-hs-track]{padding:0 calc(50vw - min(270px,36vw,calc((100svh - 390px) * .71)))!important}
+#exhibit [data-ex-b]{gap:clamp(10px,2vh,26px)!important}
+/* Testimonials: tighter cards and heading when the window is short */
+@media (min-width:1024px) and (max-height:880px){
+  #voices [data-vx-text] h2{font-size:clamp(30px,min(4vw,6.4vh),56px)!important}
+  #voices [data-vx-feat]{margin-top:clamp(16px,3vh,40px)!important}
+  #voices [data-vx-feat] > div{padding:16px 20px 14px!important}
+  #voices [data-vx-feat] blockquote{font-size:clamp(16px,1.3vw,19px)!important}
+  #voices [data-vx-feat] figcaption{margin-top:12px!important;padding-top:10px!important}
+  #voices [data-vx-feat] figcaption > span:first-child{width:44px!important;height:44px!important}
+  #voices [data-vx-card]:not([data-vx-feat]) > div{padding:14px 15px 12px!important;border-radius:16px!important}
+  #voices [data-vx-card]:not([data-vx-feat]) [data-vx-face]{width:46px!important;height:46px!important}
+  #voices [data-vx-card]:not([data-vx-feat]) blockquote{margin-top:9px!important;font-size:13.5px!important;line-height:1.42!important}
+  #voices [data-vx-card]:not([data-vx-feat]) blockquote + div{margin-top:9px!important;padding-top:8px!important}
+}
+@media (min-width:1024px) and (max-height:740px){
+  #voices [data-vx-card]:not([data-vx-feat]) blockquote{font-size:12.5px!important}
+  #voices [data-vx-card]:not([data-vx-feat]) blockquote + div{display:none!important}
+  #voices [data-vx-card]:not([data-vx-feat]) [data-vx-face]{width:40px!important;height:40px!important}
+}
+</style>
 </body>
 </html>
