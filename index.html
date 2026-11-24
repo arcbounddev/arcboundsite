@@ -1905,7 +1905,7 @@ html.nl-pill-off [data-pill]{opacity:0!important;pointer-events:none!important;t
   };
   document.addEventListener('click', function(e){
     var a = e.target.closest && e.target.closest('a[href="#define"]');
-    if (a) { e.preventDefault(); e.stopPropagation(); window.abGoDefine(); return; }
+    if (a) { e.preventDefault(); e.stopPropagation(); if (a.closest('#mobile-menu')) { var bg = document.querySelector('[data-abburger]'); if (bg) bg.click(); } window.abGoDefine(); return; }
     var j = e.target.closest && e.target.closest('.ab-sheet a[href^="#act-"]');
     if (j) {
       var t = document.getElementById(j.getAttribute('href').slice(1));
